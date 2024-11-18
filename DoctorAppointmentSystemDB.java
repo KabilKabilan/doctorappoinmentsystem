@@ -1,19 +1,24 @@
 import java.sql.*;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class DoctorAppointmentSystemDB {
     static final String JDBC_URL = "jdbc:mysql://localhost:3306/appointment_db";
     static final String DB_USER = "root"; // Replace with your username
     static final String DB_PASSWORD = ""; // Replace with your password
 
+    static ArrayList<Doctor> doctors = new ArrayList<>();
+
     public static void main(String[] args) {
         try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASSWORD);
              Scanner scanner = new Scanner(System.in)) {
 
             System.out.println("Connected to the database successfully!");
+
+            // Add doctors to the in-memory list (this could be fetched from DB as well)
             doctors.add(new Doctor(1, "Dr. Smith", "Cardiology"));
-            doctors.add(new Doctor(2,"Dr. Jones", "Neurology"));
- 
+            doctors.add(new Doctor(2, "Dr. Jones", "Neurology"));
+
             int choice;
             do {
                 System.out.println("\nDoctor Appointment System");
@@ -151,6 +156,19 @@ public class DoctorAppointmentSystemDB {
         } catch (SQLException e) {
             System.out.println("Error retrieving appointments.");
             e.printStackTrace();
+        }
+    }
+
+    // Doctor class to store doctor details
+    static class Doctor {
+        int doctorId;
+        String name;
+        String specialty;
+
+        public Doctor(int doctorId, String name, String specialty) {
+            this.doctorId = doctorId;
+            this.name = name;
+            this.specialty = specialty;
         }
     }
 }
