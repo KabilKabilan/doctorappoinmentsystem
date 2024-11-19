@@ -40,7 +40,7 @@ The **Doctor Appointment System** is a web-based platform designed to make booki
 
 1. **Clone the repository**:  
    ```bash
-   git clone https://github.com/yourusername/doctor-appointment-system.git
+   git clone [https://github.com/yourusername/doctor-appointment-system.git](https://github.com/KabilKabilan)
    ```  
 
 2. **Navigate to the project directory**:  
