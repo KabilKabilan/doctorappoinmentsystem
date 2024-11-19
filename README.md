@@ -35,5 +35,5 @@ The **Doctor Appointment System** is a web-based application designed to simplif
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/doctor-appointment-system.git
+   (https://github.com/KabilKabilan/doctorappoinmentsystem)
 
