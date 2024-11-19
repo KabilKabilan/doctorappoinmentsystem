@@ -92,6 +92,6 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📞 Contact  
 
 Got questions or feedback? Let’s connect!  
-📧 **Email**: your-kabilanbu567@gmail.com  
-👤 **GitHub**: [yourusername](https://github.com/KabilKabilan)
+📧 **Email**: kabilanbu567@gmail.com  
+👤 **GitHub**: [Kabil Kabilan](https://github.com/KabilKabilan)
 ---
